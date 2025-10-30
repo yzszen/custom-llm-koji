@@ -1,0 +1,77 @@
+# ==============================
+# Python / Jupyter / VSCode / WSL 環境共通設定
+# ==============================
+
+# Pythonキャッシュ
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 仮想環境
+.env/
+.venv/
+env/
+venv/
+*.egg-info/
+pip-wheel-metadata/
+
+# Jupyter Notebook自動生成キャッシュ
+.ipynb_checkpoints/
+
+# VSCode設定・バックアップ
+.vscode/
+*.code-workspace
+
+# ==============================
+# あなたのプロジェクト固有
+# ==============================
+
+# 一時実験・再生成可能データ
+data/csv/
+data/kb_merged/
+data/local_docs/
+data/koji_after_rag_*.jsonl
+data/koji_before_rag.jsonl
+data/koji_eval_gold.jsonl
+data/hp_urls.json
+
+# notebooks配下の中間出力・一時保存
+notebooks/downloads/
+notebooks/*.checkpoint.ipynb
+notebooks/*_tmp.ipynb
+notebooks/*backup*.ipynb
+
+# no_useディレクトリ（試行錯誤・参考）
+no_use/
+
+# 出力ファイル群
+outputs/
+scripts/eval_results.csv
+
+# Gradio関連キャッシュ
+scripts/.gradio/
+gradio_cached_examples/
+gradio_cache/
+
+# ==============================
+# OS/エディタ依存ファイル
+# ==============================
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.tmp
+*~
+
+# ==============================
+# その他（Render / Hugging Face 連携など）
+# ==============================
+# Hugging Faceトークン・設定
+huggingface/
+token.json
+hf_token.txt
+
+# Renderや環境設定ファイル
+render.yaml
+*.env.local
+*.secret
