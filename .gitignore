@@ -75,3 +75,8 @@ hf_token.txt
 render.yaml
 *.env.local
 *.secret
+
+# 公開対象外のスクリプト
+scripts/with_Ollama_compared_gold.py
+scripts/【for_SALE】with_Ollama_compared_gold.py
+
